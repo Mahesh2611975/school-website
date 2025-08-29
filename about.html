@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>About University</title>
+	<style>
+
+		body {
+			font-family: Arial, sans-serif;
+			line-height: 1.6;
+			margin: 0;
+			padding: 0;
+			background-color: #f4f4f4;
+			color: #333;
+		}
+		header {
+			background-color: #0056b3;
+			color: white;
+			padding: 10px 0;
+			text-align: center;
+		}
+		nav {
+			background-color: #003366;
+			color: white;
+			display: flex;
+			justify-content: center;
+			padding: 10px;
+		}
+		nav a {
+			color: white;
+			text-decoration: none;
+			margin: 0 15px;
+			font-weight: bold;
+		}
+		nav a:hover {
+			text-decoration: underline;
+		}
+		.container {
+			width: 90%;
+			max-width: 1000px;
+			margin: auto;
+			padding: 20px;
+			background: white;
+			box-shadow: 0 0 10px rgba(0,0,0,0.1);
+		}
+		.center-img {
+			display: block;
+			margin: 20px auto;
+			width: 200px;
+			height: 200px;
+			object-fit: cover;
+			border-radius: 30px;
+			border: 2px solid #ccc;
+		}
+		section {
+			margin-bottom: 30px;
+		}
+		h2 {
+			color: #0056b3;
+			border-bottom: 2px solid #ccc;
+			padding-bottom: 5px;
+		}
+		.vertical-gallery {
+	display: flex;
+	gap: 20px;
+	justify-content: flex-start; /* left-align */
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.column img {
+	width: 200px;
+	height: 150px;
+	object-fit: cover;
+	border-radius: 5px;
+	border: 2px solid #ccc;
+}
+footer {
+		text-align: center;
+		background-color: #003366;
+		color: white;
+		padding: 15px 0;
+		margin-top: 20px;
+	}
+
+	</style>
+	<script>
+	let slideIndex = 0;
+	showSlides();
+
+	function showSlides() {
+		let i;
+		let slides = document.getElementsByClassName("mySlides");
+		let dots = document.getElementsByClassName("dot");
+
+		for (i = 0; i < slides.length; i++) {
+			slides[i].style.display = "none";  
+		}
+		slideIndex++;
+		if (slideIndex > slides.length) {slideIndex = 1}    
+
+		for (i = 0; i < dots.length; i++) {
+			dots[i].className = dots[i].className.replace(" active", "");
+		}
+
+		slides[slideIndex-1].style.display = "block";  
+		dots[slideIndex-1].className += " active";
+		setTimeout(showSlides, 3000); // Change image every 3 seconds
+	}
+</script>
+
+</head>
+<body>
+<header>
+	<h1>Sri Shivashankar Primary & Marulasiddheshwar High School </h1>
+</header>
+
+
+
+<div class="container">
+
+	<img src="C:\Users\Mahesh Yadav\Desktop\WhatsApp Image 2025-06-17 at 14.50.56_865a6131.jpg" alt="College Logo" class="center-img">
+
+	<section>
+		<h2>Our History</h2>
+		<p>The Mahadev Educational Trust was founded in 2012 by Shree Chandrashekar S. Biradar. It began its journey from a humble start in a Mahadev temple and has grown into a well-established institution educating hundreds of students from LKG to 10th grade, with over ₹10 crores invested in its development.</p>
+	</section>
+
+	<section>
+		<h2>Campus & Facilities</h2>
+		<p>Our school is located just 1 km from Mudbi and is surrounded by lush greenery and beautiful gardens. The campus includes modern classrooms, science labs, computer labs, a library, sports grounds, and transport facilities.</p>
+	</section>
+
+	<section>
+		<h2>Academics</h2>
+		<p>We offer a diverse curriculum including Sanskrit, Hindi, English, Mathematics, Science, and Social Studies. Teachers ensure student-centered learning, focusing on building discipline, confidence, and inquisitiveness among students.</p>
+	</section>
+
+	<section>
+		<h2>Extracurricular Activities</h2>
+		<p>Students participate in music, dance, drama, painting, and sports. These activities ensure their holistic development and enhance creativity and teamwork.</p>
+	</section>
+
+	<section>
+		<h2>Visitors & Recognition</h2>
+		<p>Many dignitaries including Union Minister Bhagwanta Khuba and former CM Basavaraj Bommai have visited our campus and praised the trust's efforts in spreading quality education in rural areas.</p>
+	</section>
+<section>
+	<h2>Photo Gallery - Slideshow</h2>
+	<div class="slideshow-container">
+
+		<div class="mySlides fade">
+			<img src="C:\Users\Mahesh Yadav\Desktop\campus.png.jpg" style="width:100%; max-height:400px; object-fit:cover;">
+			<p style="text-align:center;">Campus View</p>
+		</div>
+
+		<div class="mySlides fade">
+			<img src="C:\Users\Mahesh Yadav\Desktop\events.png.jpg" style="width:100%; max-height:400px; object-fit:cover;">
+			<p style="text-align:center;">Sports Event</p>
+		</div>
+
+		<div class="mySlides fade">
+			<img src="C:\Users\Mahesh Yadav\Desktop\culture.png.jpg" style="width:100%; max-height:400px; object-fit:cover;">
+			<p style="text-align:center;">Cultural Program</p>
+		</div>
+
+		<div class="mySlides fade">
+			<img src="C:\Users\Mahesh Yadav\Desktop\class.png.jpg" style="width:100%; max-height:400px; object-fit:cover;">
+			<p style="text-align:center;">Classroom</p>
+		</div>
+
+	</div>
+	<br>
+	<div style="text-align:center">
+		<span class="dot"></span> 
+		<span class="dot"></span> 
+		<span class="dot"></span> 
+		<span class="dot"></span> 
+	</div>
+</section>
+
+<section>
+		<h2>Our Vision</h2>
+		<p>Inspired by Lord Shiva, our goal is to provide meaningful education that fosters self-discipline, independent thinking, and a spirit of inquiry. We nurture students from all backgrounds to become thoughtful, responsible citizens of the world.</p>
+	</section>
+
+
+</div>
+
+<footer>
+	<p>&copy; 2025 Shree Mahadev Education Trust. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
